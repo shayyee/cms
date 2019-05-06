@@ -1,0 +1,113 @@
+<include file="Index/header" />
+<body>
+
+<div id="wrapper">
+
+    <include file="Index/nav"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="{:U('Config/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>系统设置</a>
+                </li>
+                <li>
+                    <a href="{:U('Manager/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>管理员管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Teacher/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>教师管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Student/index')}" class="active-menu waves-effect waves-dark"><i class="fa fa-sitemap"></i>学生管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Class/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>班级管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Course/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>课程管理</a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="{:U('Share/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>共享资料管理</a>-->
+                <!--</li>-->
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>  <a href="{:U('Teacher/index')}">教师管理</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-edit"></i>编辑
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <form class="form-horizontal" id="singcms-form">
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label">学号:</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="sno" placeholder="" value="{$vo.sno}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label">姓名:</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="realname" placeholder="" value="{$vo.realname}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label">密码:</label>
+                            <div class="col-sm-5">
+                                <input type="password" class="form-control" name="password" placeholder="留空则不修改" value="">
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="s_id" value="{$vo.s_id}"/>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<script>
+    var SCOPE = {
+        'save_url' : '/Admin/Student/save',
+        'jump_url' : '/Admin/Student/index.html'
+
+    };
+
+</script>
+<!-- /#wrapper -->
+<include file="Index/footer" />

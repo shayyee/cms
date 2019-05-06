@@ -1,0 +1,198 @@
+<include file="Index:header" />
+<body>
+<div id="wrapper">
+    <include file="Index:nav"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="{:U('Config/index')}" class="active-menu waves-effect waves-dark"><i class="fa fa-sitemap"></i>系统设置</a>
+                </li>
+                <li>
+                    <a href="{:U('Manager/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>管理员管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Teacher/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>教师管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Student/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>学生管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Class/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>班级管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Course/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>课程管理</a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="{:U('Share/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>共享资料管理</a>-->
+                <!--</li>-->
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i> <a href="/Admin/Config/index.html">系统管理</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-table"></i>{$nav}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active">
+                    <a href="#oss" data-toggle="tab">
+                        OSS存储配置
+                    </a>
+                </li>
+                <li>
+                    <a href="#basic" data-toggle="tab">
+                        基本配置
+                    </a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="oss">
+                    <form class="form-horizontal" id="singcms-form">
+                        <if condition="$user eq 1">
+                            <div class="form-group">
+                                <label for="inputid" class="col-sm-2 control-label">Access Key ID:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" name="id" class="form-control" id="inputid" value="{$config['key_id']}">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputsecret" class="col-sm-2 control-label">Access Key Secret:</label>
+                                <div class="col-sm-5">
+                                    <input type="password" name="secret" class="form-control" id="inputsecret" value="{$config['key_secret']}"/>
+                                </div>
+                            </div>
+
+                            <!--<div class="form-group">-->
+                                <!--<label for="inputendpoint" class="col-sm-2 control-label">End Point:</label>-->
+                                <!--<div class="col-sm-5">-->
+                                    <!--<input type="text" name="endpoint" class="form-control" id="inputendpoint" value="{$config['end_point']}"/>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <!--<div class="form-group">-->
+                                <!--<label for="inputbucket" class="col-sm-2 control-label">BucketName:</label>-->
+                                <!--<div class="col-sm-5">-->
+                                    <!--<input type="text" name="bucket" class="form-control" id="inputbucket" value="{$config['bucket']}"/>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </if>
+                        <div class="form-group">
+                            <label for="inputboot" class="col-sm-2 control-label">文件上传根目录:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="boot" class="form-control" id="inputboot" value="{$config['upload']}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputavatar" class="col-sm-2 control-label">头像上传目录:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="avatar" class="form-control" id="inputavatar" value="{$config['avatar']}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputhomework" class="col-sm-2 control-label">作业上传目录:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="homework" class="form-control" id="inputhomework" value="{$config['homework']}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputshare" class="col-sm-2 control-label">共享资料上传目录:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="share" class="form-control" id="inputshare" value="{$config['share']}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" class="btn btn-primary" id="singcms-button-submit">提交</button>
+                                <if condition="$user eq 1">
+                                    <button type="button" class="btn btn-warning" style="margin-left:26%" id="slbinit">重置负载均衡</button>
+                                    <a href="/Admin/Config/bucket.html">管理Buckets</a>
+                                </if>
+                                <!--<a class="btn btn-primary" style="margin-left: 26%;padding-top: 7px;" href="/Admin/Config/bucket.html">负载均衡管理</a>-->
+                                <!--<input type="text" name="slb" value="{$config['slb']}" hidden>-->
+                                <!--<if condition="$config['slb'] eq 0">-->
+                                    <!--<button type="button" class="btn btn-primary" style="margin-left:26%" id="slbopen">开启负载均衡</button>-->
+                                    <!--<else/>-->
+                                    <!--<button type="button" class="btn btn-warning" style="margin-left:26%" id="slbclose">关闭负载均衡</button>-->
+                                    <!--<a href="/Admin/Config/bucket.html">管理Buckets</a>-->
+                                <!--</if>-->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="basic">
+                    <form class="form-horizontal" id="singcms-form1">
+                        <!--<div class="form-group">-->
+                            <!--<label for="inputissue" class="col-sm-2 control-label">增加开课班次:</label>-->
+                            <!--<div class="col-sm-5">-->
+                                <!--<input type="text" name="issue" class="form-control" id="inputissue" placeholder="请填写班次（例：2017年春）">-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <div class="form-group">
+                            <label for="inputps" class="col-sm-2 control-label">页面显示条数:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="pagesize" class="form-control" id="inputps" placeholder="PageSize" value="{$config['pagesize']}"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" class="btn btn-primary" id="singcms-button-submit1">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+    <!-- Morris Charts JavaScript -->
+</div><!-- /. WRAPPER  -->
+<script>
+    var SCOPE = {
+        'save_url' : '/Admin/Config/save',
+        'jump_url' : '/Admin/Config/index.html',
+    };
+    $('#slbinit').click(function () {
+        var url = '/Admin/Config/slbinit';
+        $.post(url,{
+            slb:"init"
+        },function(result){
+            if(result.status == 1) {
+                //成功
+                return dialog.success(result.message,SCOPE.jump_url);
+            }else if(result.status == 0) {
+                // 失败
+                return dialog.error(result.message);
+            }
+        },"JSON");
+    });
+</script>
+
+<include file="Index:footer" />
+

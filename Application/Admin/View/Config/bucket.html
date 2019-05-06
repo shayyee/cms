@@ -1,0 +1,123 @@
+<include file="Index:header"/>
+<body>
+<div id="wrapper">
+    <include file="Index:nav"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="{:U('Config/index')}" class="active-menu waves-effect waves-dark"><i
+                            class="fa fa-sitemap"></i>系统设置</a>
+                </li>
+                <li>
+                    <a href="{:U('Manager/index')}" class="waves-effect waves-dark"><i
+                            class="fa fa-sitemap"></i>管理员管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Teacher/index')}" class="waves-effect waves-dark"><i
+                            class="fa fa-sitemap"></i>教师管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Student/index')}" class="waves-effect waves-dark"><i
+                            class="fa fa-sitemap"></i>学生管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Class/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>班级管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Course/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>课程管理</a>
+                </li>
+                <!--<li>-->
+                <!--<a href="{:U('Share/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>共享资料管理</a>-->
+                <!--</li>-->
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i> <a href="{:U('Config/index')}">系统管理</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-table"></i> Buckets管理
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="oss">
+                    <table class="table table-bordered table-hover singcms-table">
+                        <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>bucket</th>
+                            <th>endpoint</th>
+                            <th>weight</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <volist name="buckets" id="vo">
+                            <tr>
+
+                                <td>{$vo.bucket_id}</td>
+                                <td><input type="text" value="{$vo.bucketname}"></td>
+                                <td><input type="text" value="{$vo.endpoint}"></td>
+                                <td><input type="text" value="{$vo.weight}"></td>
+                                <td>
+                                    <button class="btn btn-primary">修改</button>
+                                </td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+    <!-- Morris Charts JavaScript -->
+</div><!-- /. WRAPPER  -->
+<script>
+
+    $('.btn').click(function () {
+        var url = '/Admin/Config/bucket';
+        var data = {
+            'id': $(this).parents('tr').children().eq(0).text(),
+            'name': $(this).parents('tr').children().eq(1).children().val(),
+            'endpoint': $(this).parents('tr').children().eq(2).children().val(),
+            'weight': $(this).parents('tr').children().eq(3).children().val(),
+        }
+//        console.log(data);
+        $.post(url,data,function(result){
+            if(result.status == 1) {
+                //成功
+                return dialog.success(result.message,'/Admin/Config/bucket.html');
+            }else if(result.status == 0) {
+                // 失败
+                return dialog.error(result.message);
+            }
+        },"JSON");
+    });
+
+</script>
+
+<include file="Index:footer"/>
+

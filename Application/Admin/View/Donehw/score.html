@@ -1,0 +1,119 @@
+<include file="Index:header" />
+<body>
+<div id="wrapper">
+    <include file="Index:nav"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="{:U('Donehw/index')}" class="active-menu waves-effect waves-dark"><i class="fa fa-sitemap"></i>已交作业</a>
+                <li>
+                <li>
+                    <a href="{:U('Homework/add')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>发布作业</a>
+                <li>
+                <li>
+                    <a href="{:U('Homework/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>作业列表</a>
+                <li>
+                <li>
+                    <a href="{:U('Share/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>共享资料</a>
+                <li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>  <a href="/Admin/Donehw/index.html">已交作业</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-edit"></i> 批量输入学生得分
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="oss">
+                    <table class="table table-bordered table-hover singcms-table">
+                        <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>姓名</th>
+                            <th>学号</th>
+                            <th>评语</th>
+                            <th>得分</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <volist name="scores" id="vo">
+                            <tr class="content">
+
+                                <td>{$vo.dhw_id}</td>
+                                <td>{$vo.realname}</td>
+                                <td>{$vo.sno}</td>
+                                <td><input name="comment" type="text" value="{$vo.comment}"></td>
+                                <td><input name="score" type="text" value="{$vo.score}"></td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <button type="button" class="btn btn-primary" id="submit">提交</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+    <!-- Morris Charts JavaScript -->
+</div><!-- /. WRAPPER  -->
+<script>
+    $('#submit').click(function () {
+        var postData = {};
+//        var i=0;
+        $('.content').each(function (i) {
+            var comment = $(this).children().eq(3).children().val();
+            var score = $(this).children().eq(4).children().val();
+            if(score == "") {
+                layer.tips('得分不能为空', $(this).children().eq(4).children());
+                return false;
+            }else{
+                postData[i] = {
+                    'dhw_id': $(this).children().eq(0).text(),
+                    'comment': comment,
+                    'score': score
+                };
+            }
+        });
+//        console.log(postData);
+        var url = '/Admin/Donehw/insertAll';
+        $.post(url,postData,function (result) {
+            if(result.status == 1) {
+                //成功
+                return dialog.success(result.message,'/Admin/Donehw/index.html');
+            }else if(result.status == 0) {
+                // 失败
+                return dialog.error(result.message);
+            }
+        },'JSON');
+    })
+</script>
+
+<include file="Index:footer" />
+

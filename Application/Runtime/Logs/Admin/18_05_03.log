@@ -1,0 +1,336 @@
+[ 2018-05-03T11:31:03+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+
+[ 2018-05-03T11:31:03+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2018-05-03T11:31:18+08:00 ] 127.0.0.1 /Admin/Login/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `cms_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-05-03T11:31:22+08:00 ] 127.0.0.1 /Admin/Login/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `cms_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1525318282',`lastloginip`='127.0.0.1' WHERE ( admin_id=1 ) [ RunTime:0.0051s ]
+
+[ 2018-05-03T11:31:24+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `cms_student` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_student` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cms_teacher` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_teacher` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cms_homework` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_homework` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0094s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2018-05-03T11:31:33+08:00 ] 127.0.0.1 /Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2018-05-03T11:31:34+08:00 ] 127.0.0.1 /Admin/Manager/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ManagerController.class.php 第 30 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ManagerController.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_admin` WHERE `status` IN ('0','1') ORDER BY admin_id desc LIMIT 0,4   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_admin` WHERE `status` IN ('0','1') LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\71667e699eae66b4954cb62aa6e05a39.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\71667e699eae66b4954cb62aa6e05a39.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2018-05-03T11:31:35+08:00 ] 127.0.0.1 /Admin/Teacher/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\TeacherController.class.php 第 31 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\TeacherController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `cms_teacher` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `cms_teacher` ORDER BY t_id desc LIMIT 0,4   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_teacher` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\a5670205d9174c981d4ca99e961680e1.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\a5670205d9174c981d4ca99e961680e1.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2018-05-03T11:31:36+08:00 ] 127.0.0.1 /Admin/Student/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\StudentController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\StudentController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_student` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `cms_student` ORDER BY s_id desc LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_student` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2018-05-03T11:31:37+08:00 ] 127.0.0.1 /Admin/Class/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ClassController.class.php 第 26 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ClassController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `cms_class` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `cms_class` [ RunTime:0.0080s ]
+SQL: SELECT cl.class_id,cl.classname,cl.issue,co.name FROM cms_class cl LEFT JOIN cms_course AS co ON cl.course_id = co.course_id  ORDER BY class_id desc LIMIT 0,4   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cms_class` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM cms_class cl LEFT JOIN cms_course AS co ON cl.course_id = co.course_id  LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\d226dc04610e76ef6af5711bccd551e3.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\d226dc04610e76ef6af5711bccd551e3.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2018-05-03T11:31:37+08:00 ] 127.0.0.1 /Admin/Course/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\CourseController.class.php 第 32 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\CourseController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0077s ]
+SQL: SELECT c.course_id,c.cno,c.name,c.picpath,t.realname FROM cms_course c LEFT JOIN cms_teacher AS t ON c.t_id = t.t_id  ORDER BY course_id desc LIMIT 0,4   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_course` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\0a118b67613e888354da043b45de67d3.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2018-05-03T11:31:46+08:00 ] 127.0.0.1 /Admin/Student/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\StudentController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\StudentController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_student` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cms_student` ORDER BY s_id desc LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_student` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8ac9139f0dd4d42903280ce12eaaca3b.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2018-05-03T11:31:47+08:00 ] 127.0.0.1 /Admin/Teacher/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\TeacherController.class.php 第 31 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\TeacherController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `cms_teacher` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `cms_teacher` ORDER BY t_id desc LIMIT 0,4   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_teacher` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\a5670205d9174c981d4ca99e961680e1.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\a5670205d9174c981d4ca99e961680e1.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2018-05-03T11:31:49+08:00 ] 127.0.0.1 /Admin/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+
+[ 2018-05-03T11:31:49+08:00 ] 127.0.0.1 /Admin/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+

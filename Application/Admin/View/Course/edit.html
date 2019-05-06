@@ -1,0 +1,135 @@
+<include file="Index/header" />
+<body>
+
+<div id="wrapper">
+
+    <include file="Index/nav"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="{:U('Config/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>系统设置</a>
+                </li>
+                <li>
+                    <a href="{:U('Manager/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>管理员管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Teacher/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>教师管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Student/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>学生管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Class/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>班级管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Course/index')}" class="active-menu waves-effect waves-dark"><i class="fa fa-sitemap"></i>课程管理</a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="{:U('Share/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>共享资料管理</a>-->
+                <!--</li>-->
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>  <a href="{:U('Teacher/index')}">教师管理</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-edit"></i>编辑
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <form class="form-horizontal" id="singcms-form">
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label">课号:</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="cno" placeholder="" value="{$vo.cno}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label  class="col-sm-2 control-label">课程名:</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="cname" placeholder="" value="{$vo.name}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="file_upload" class="col-sm-2 control-label">封面:</label>
+                            <div class="col-sm-5">
+                                <input id="file_upload"  type="file">
+                                <img style="display: none" id="upload_org_code_img" src="{$vo.picpath}" width="150" height="150">
+                                <input id="file_upload_image" name="pic" type="hidden" value="{$vo.picpath}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="selecttname" class="col-sm-2 control-label">任课老师:</label>
+                            <div class="col-sm-5">
+                                <select class="form-control" name="tid" id="selecttname" style="height:44px;">
+                                    <foreach name="teachers" item="t">
+                                        <option value="{$t.t_id}"<if condition="$t['t_id'] eq $vo['t_id']">selected="selected"</if>>{$t.realname}</option>
+                                    </foreach>
+                                </select>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="course_id" value="{$vo.course_id}"/>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" class="btn btn-default" id="singcms-button-submit">提交</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<script>
+    var SCOPE = {
+        'save_url' : '/Admin/Course/save',
+        'jump_url' : '/Admin/Course/index.html',
+        'ajax_upload_image_url' : '/Admin/Upload/ajaxuploadimage',
+        'ajax_upload_swf' : '__JS__/uploadify/uploadify.swf',
+    };
+
+</script>
+<script type="text/javascript" src="__JS__/uploadify/jquery.uploadify.js"></script>
+<script type="text/javascript" src="__JS__/image.js"></script>
+<script>
+    var pic = "{$vo.picpath}";
+    if(pic) {
+        $("#upload_org_code_img").show();
+    }
+</script>
+<!-- /#wrapper -->
+<include file="Index/footer" />

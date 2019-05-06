@@ -1,0 +1,1964 @@
+[ 2017-04-15T11:39:09+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:39:09+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.009000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.010000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-15T11:39:18+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:39:18+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:39:28+08:00 ] 127.0.0.1 /Admin/Login/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `cms_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1492227568',`lastloginip`='127.0.0.1' WHERE ( admin_id=1 ) [ RunTime:0.0010s ]
+
+[ 2017-04-15T11:39:30+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 185 行.
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:40:11+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:40:19+08:00 ] 127.0.0.1 /Admin/Login/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_teacher` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `cms_teacher` WHERE `username` = 'lg' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-04-15T11:40:19+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 185 行.
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:40:24+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 185 行.
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:40:32+08:00 ] 127.0.0.1 /Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:41:27+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 185 行.
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:41:28+08:00 ] 127.0.0.1 /Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:41:36+08:00 ] 127.0.0.1 /Admin/Config/slbclose
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: UPDATE `cms_config` SET `slb`='0' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2017-04-15T11:41:37+08:00 ] 127.0.0.1 /Admin/Config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:43:06+08:00 ] 127.0.0.1 /Admin/Config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:45:49+08:00 ] 127.0.0.1 /Admin/Config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:45:58+08:00 ] 127.0.0.1 /Admin/Config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:46:01+08:00 ] 127.0.0.1 /Admin/Config/bucket.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_bucket` [ RunTime:0.1850s ]
+SQL: SELECT * FROM `cms_bucket`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\097431bdaf116ae5458a8841ac7da870.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:46:05+08:00 ] 127.0.0.1 /Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:47:39+08:00 ] 127.0.0.1 /Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+NOTIC: [8] Undefined index: end_point D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 143 行.
+NOTIC: [8] Undefined index: bucket D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:47:45+08:00 ] 127.0.0.1 /Admin/Config/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: endpoint D:\www\studyspace\CMS\Application\Admin\Controller\ConfigController.class.php 第 35 行.
+NOTIC: [8] Undefined index: bucket D:\www\studyspace\CMS\Application\Admin\Controller\ConfigController.class.php 第 38 行.
+NOTIC: [8] Undefined index: pagesize D:\www\studyspace\CMS\Application\Admin\Controller\ConfigController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: UPDATE `cms_config` SET `key_id`='LTAIDEA9Usu0tbjx',`key_secret`='fCJcflBD9V75S81QdmNCT4xA3ap8wv',`upload`='Uploads',`avatar`='avatar',`homework`='homework',`share`='shares' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2017-04-15T11:47:46+08:00 ] 127.0.0.1 /Admin/Config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+NOTIC: [8] Undefined index: end_point D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 143 行.
+NOTIC: [8] Undefined index: bucket D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:48:07+08:00 ] 127.0.0.1 /Admin/Config/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: endpoint D:\www\studyspace\CMS\Application\Admin\Controller\ConfigController.class.php 第 35 行.
+NOTIC: [8] Undefined index: bucket D:\www\studyspace\CMS\Application\Admin\Controller\ConfigController.class.php 第 38 行.
+NOTIC: [8] Undefined index: pagesize D:\www\studyspace\CMS\Application\Admin\Controller\ConfigController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0050s ]
+SQL: UPDATE `cms_config` SET `key_id`='LTAIDEA9Usu0tbjx',`key_secret`='fCJcflBD9V75S81QdmNCT4xA3ap8wv',`upload`='Uploads',`avatar`='avatar',`share`='shares' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2017-04-15T11:48:08+08:00 ] 127.0.0.1 /Admin/Config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+NOTIC: [8] Undefined index: end_point D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 143 行.
+NOTIC: [8] Undefined index: bucket D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:50:03+08:00 ] 127.0.0.1 /Admin/Homework/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\HomeworkController.class.php 第 32 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\HomeworkController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `cms_homework` [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `cms_homework` [ RunTime:0.0040s ]
+SQL: SELECT hw.hw_id,hw.title,c.classname,hw.createtime,hw.endtime FROM cms_homework hw LEFT JOIN cms_class AS c ON hw.class_id = c.class_id  WHERE `t_id` = '1' ORDER BY hw_id desc LIMIT 0,4   [ RunTime:0.0830s ]
+SQL: SHOW COLUMNS FROM `cms_homework` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM cms_homework hw LEFT JOIN cms_class AS c ON hw.class_id = c.class_id  WHERE `t_id` = '1' LIMIT 1   [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\fa225c61752f39b628d9ceca42abb204.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:50:03+08:00 ] 127.0.0.1 /Admin/Share/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:50:06+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:50:14+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:50:17+08:00 ] 127.0.0.1 /Admin/Share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:56:31+08:00 ] 127.0.0.1 /Admin/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:56:31+08:00 ] 127.0.0.1 /Admin/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2017-04-15T11:56:39+08:00 ] 127.0.0.1 /Admin/Login/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_teacher` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `cms_teacher` WHERE `username` = 'lg' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-04-15T11:56:40+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 185 行.
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:56:44+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=14 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:56:56+08:00 ] 127.0.0.1 /Admin/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:56:56+08:00 ] 127.0.0.1 /Admin/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:57:05+08:00 ] 127.0.0.1 /Admin/Login/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1492228625',`lastloginip`='127.0.0.1' WHERE ( admin_id=1 ) [ RunTime:0.0260s ]
+
+[ 2017-04-15T11:57:07+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 185 行.
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:57:09+08:00 ] 127.0.0.1 /Admin/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 104 行.
+NOTIC: [8] Undefined index: end_point D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 143 行.
+NOTIC: [8] Undefined index: bucket D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\9bb5e7ead1bbec7c3d970a481af28a6e.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:58:35+08:00 ] 127.0.0.1 /Admin/Share/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T11:58:37+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=13 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T11:58:38+08:00 ] 127.0.0.1 /Admin/Share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T12:02:45+08:00 ] 127.0.0.1 /Admin/Upload/uploadshare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\www\studyspace\CMS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cms_bucket` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_bucket`  [ RunTime:0.0010s ]
+
+[ 2017-04-15T12:17:05+08:00 ] 127.0.0.1 /Admin/Share/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0050s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T12:17:08+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T12:17:09+08:00 ] 127.0.0.1 /Admin/Share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T12:17:15+08:00 ] 127.0.0.1 /Admin/Upload/uploadshare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\www\studyspace\CMS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cms_bucket` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_bucket`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+
+[ 2017-04-15T12:17:17+08:00 ] 127.0.0.1 /Admin/Share/save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: UPDATE `cms_share` SET `filename`='课件2',`course_id`='2',`author`='1',`create_time`='2017-04-15 12:17:17',`path`='Uploads/shares/20170415121714.xls',`size`='26112' WHERE ( share_id=14 ) [ RunTime:0.0010s ]
+
+[ 2017-04-15T12:17:18+08:00 ] 127.0.0.1 /Admin/Share/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0070s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T12:19:02+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=13 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T12:19:03+08:00 ] 127.0.0.1 /Admin/Share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T12:19:11+08:00 ] 127.0.0.1 /Admin/Upload/uploadshare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\www\studyspace\CMS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cms_bucket` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_bucket`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+ERR: ./Uploads/shares/20170415121908.js file does not exist
+
+[ 2017-04-15T12:19:33+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=13 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T12:19:34+08:00 ] 127.0.0.1 /Admin/Share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T12:19:44+08:00 ] 127.0.0.1 /Admin/Upload/uploadshare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\www\studyspace\CMS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cms_bucket` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_bucket`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+ERR: ./Uploads/shares/20170415121941.js file does not exist
+
+[ 2017-04-15T12:20:39+08:00 ] 127.0.0.1 /Admin/Upload/uploadshare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\www\studyspace\CMS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_bucket` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_bucket`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+ERR: ./Uploads/shares/20170415122038.jpg file does not exist
+
+[ 2017-04-15T12:22:59+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=13 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-15T12:22:59+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=13 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-15T12:23:00+08:00 ] 127.0.0.1 /Admin/Share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-15T12:23:01+08:00 ] 127.0.0.1 /Admin/Share/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0070s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T12:23:03+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T12:23:04+08:00 ] 127.0.0.1 /Admin/Share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T12:23:17+08:00 ] 127.0.0.1 /Admin/Upload/uploadshare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\www\studyspace\CMS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `cms_bucket` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_bucket`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+ERR: ./Uploads/shares/20170415122317.xls file does not exist
+
+[ 2017-04-15T12:24:19+08:00 ] 127.0.0.1 /Admin/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T12:24:19+08:00 ] 127.0.0.1 /Admin/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T12:24:29+08:00 ] 127.0.0.1 /Admin/Login/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_teacher` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_teacher` WHERE `username` = 'lg' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-04-15T12:24:30+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 185 行.
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T12:24:31+08:00 ] 127.0.0.1 /Admin/Share/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T12:24:32+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T12:24:33+08:00 ] 127.0.0.1 /Admin/Share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T12:24:49+08:00 ] 127.0.0.1 /Admin/Upload/uploadshare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\www\studyspace\CMS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `cms_bucket` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_bucket`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+ERR: ./Uploads/shares/20170415122446.js file does not exist
+
+[ 2017-04-15T12:34:21+08:00 ] 127.0.0.1 /Admin/Upload/uploadshare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\www\studyspace\CMS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `cms_bucket` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_bucket`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+ERR: ./Uploads/shares/20170415123420.rar file does not exist
+
+[ 2017-04-15T12:36:57+08:00 ] 127.0.0.1 /Admin/Upload/uploadshare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\www\studyspace\CMS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `cms_bucket` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_bucket`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+ERR: ./Uploads/shares/20170415123657.csv file does not exist
+
+[ 2017-04-15T13:19:59+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T13:20:00+08:00 ] 127.0.0.1 /Admin/Share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T13:20:02+08:00 ] 127.0.0.1 /Admin/Share/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T13:20:04+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T13:20:06+08:00 ] 127.0.0.1 /Admin/Share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T13:20:10+08:00 ] 127.0.0.1 /Admin/Upload/uploadshare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\www\studyspace\CMS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `cms_bucket` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_bucket`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+ERR: ./Uploads/shares/20170415132010.caa file does not exist
+
+[ 2017-04-15T13:24:07+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T13:24:07+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T13:24:14+08:00 ] 127.0.0.1 /Admin/Login/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_teacher` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_teacher` WHERE `username` = 'lg' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-04-15T13:24:15+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 185 行.
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T13:24:16+08:00 ] 127.0.0.1 /Admin/Share/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T13:24:18+08:00 ] 127.0.0.1 /Admin/Share/edit.html?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_share` WHERE ( share_id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cms_course` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_course` WHERE ( t_id=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\8992eab2b50fd0d28117a9bd04a7edcf.php 第 53 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T13:24:18+08:00 ] 127.0.0.1 /Admin/Share/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: p D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 29 行.
+NOTIC: [8] Undefined index: pageSize D:\www\studyspace\CMS\Application\Admin\Controller\ShareController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `cms_share` [ RunTime:0.0040s ]
+SQL: SELECT s.share_id,s.filename,c.name,s.create_time,s.size,s.status FROM cms_share s LEFT JOIN cms_course AS c ON s.course_id = c.course_id  WHERE `author` = '1' ORDER BY share_id desc LIMIT 0,4   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_Count FROM `cms_share` WHERE `author` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: usertype D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 51 行.
+NOTIC: [8] Undefined variable: nav D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\db6fe4e10392464184ea11c7ecd654ea.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T13:24:26+08:00 ] 127.0.0.1 /Admin/Upload/uploadshare
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\www\studyspace\CMS\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `cms_config`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: end_point D:\www\studyspace\CMS\Application\Common\Common\function.php 第 87 行.
+ERR: endpoint is empty
+
+[ 2017-04-15T15:38:33+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-15T15:38:33+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-15T15:39:08+08:00 ] 127.0.0.1 /Admin/Login/check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `cms_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0660s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1492241948',`lastloginip`='127.0.0.1' WHERE ( admin_id=1 ) [ RunTime:0.2400s ]
+
+[ 2017-04-15T15:39:09+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 185 行.
+NOTIC: [8] Undefined variable: news D:\www\studyspace\CMS\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,178 @@
+<include file="Index:header" />
+<body>
+<div id="wrapper">
+    <include file="Index:nav"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="{:U('Donehw/index')}" class="active-menu waves-effect waves-dark"><i class="fa fa-sitemap"></i>已交作业</a>
+                <li>
+                <li>
+                    <a href="{:U('Homework/add')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>发布作业</a>
+                <li>
+                <li>
+                    <a href="{:U('Homework/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>作业列表</a>
+                <li>
+                <li>
+                    <a href="{:U('Share/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>共享资料</a>
+                <li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li class="active">
+                            <i class="fa fa-table"></i> 已交作业
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="h_a">批量批改作业</div>
+            <div class="search_type cc mb10">
+                <form action="/Admin/Upload/downAll" method="POST">
+                    <ul>
+                        <li>
+                            <select class="form-control" style="height:29px;padding: 0;" name="classid" id="class" style="height:40px;">
+                                <foreach name="classes" item="c">
+                                    <option value="{$c.class_id}">{$c.classname}</option>
+                                </foreach>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="form-control" style="height:29px;padding: 0;" name="hwid" id="hw" style="height:40px;">
+                                <foreach name="hws" item="h">
+                                    <option value="{$h.hw_id}">{$h.title}</option>
+                                </foreach>
+                            </select>
+                        </li>
+                        <!--<li><button type="submit" class="btn btn_submit">批量下载作业</button>-->
+                        <li><button type="submit" class="btn btn_submit">批量下载作业</button>
+                        <li><button type="button" id="score" class="btn btn_submit">批量输入学生评分</button>
+                    </ul>
+                </form>
+            </div>
+            <div class="h_a">搜索</div>
+            <div class="search_type cc mb10">
+                <form action="{:U('Admin/Donehw/index')}" method="POST">
+                    <ul>
+                        <li><label>标题</label><input name="title" type="text" class="input length_2 mr10"></li>
+                        <li><label>所属班级</label><input name="classname" type="text" class="input length_2 mr10"></li>
+                        <li><label>上交学生(学号)</label><input name="student" type="text" class="input length_2 mr10"></li>
+                        <li>
+                            <select class="form-control" style="height:29px;padding: 0;" name="status" id="status">
+                                <option value="0">全部</option>
+                                <option value="1">未批改</option>
+                                <option value="2">已批改</option>
+                            </select>
+                        </li>
+                        <li><button type="submit" class="btn btn_submit">搜索</button>
+                    </ul>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3></h3>
+                    <div class="table-responsive">
+                        <form id="singcms-listorder">
+                            <table class="table table-bordered table-hover singcms-table">
+                                <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>标题</th>
+                                    <th>所属班级</th>
+                                    <th>上交学生</th>
+                                    <th>上交时间</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="homeworks" id="vo">
+                                    <tr>
+
+                                        <td>{$vo.dhw_id}</td>
+                                        <td>{$vo.title}</td>
+                                        <td>{$vo.classname}</td>
+                                        <td>{$vo.sno}</td>
+                                        <td>{$vo.updatetime}</td>
+                                        <if condition="$vo.status eq 0">
+                                            <td style="color: red;">未批改</td>
+                                            <else /><td>已批改</td>
+                                        </if>
+                                        <td>
+                                            <input type="text" hidden value="{$vo.dhw_id}">
+                                            <button style="height:30px;" type="button" class="check btn btn-primary">批改作业</button>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                            <ul class="pagination">
+                                {$pageRes}
+                            </ul>
+                        </form>
+                        <!--<div>-->
+                        <!--<button id="singcms-button-back" class="btn btn-default">返回</button>-->
+                        <!--</div>-->
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+    <!-- Morris Charts JavaScript -->
+</div><!-- /. WRAPPER  -->
+<script>
+    $(function () {
+        var classid = $('#class').val();
+        gethw(classid);
+    });
+    var SCOPE = {
+        'index_url' : '/Admin/Donehw/index.html',
+    };
+    $('.check').click(function () {
+        var dhw_id = $(this).prev().val();
+        window.location.href = '/Admin/Donehw/detail.html?id='+ dhw_id;
+    })
+    $('#class').change(function () {
+        var classid = $(this).val();
+        $('#hw').empty();
+        gethw(classid);
+
+    });
+    function gethw(cid) {
+        $.post('/Admin/Donehw/index',{classid:cid},function (response) {
+            $.each(response, function (i, item) {
+                $("<option></option>").val(response[i].hw_id).text(response[i].title).appendTo($("#hw"));
+            });
+        })
+    }
+    $('#score').click(function () {
+        var hw_id = $(":input[name='hwid']").val();
+        if(hw_id) {
+            window.location.href = "/Admin/Donehw/score.html?hwid=" + hw_id;
+        }else{
+            layer.alert("该课程下还没有作业");
+        }
+    });
+</script>
+
+<include file="Index:footer" />
+

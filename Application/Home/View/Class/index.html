@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>个人中心</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet" />
+    <link href="__CSS__/custom-styles.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="__CSS__/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__CSS__/ucenter.css"/>
+    <link rel="stylesheet" type="text/css" href="__CSS__/search.css"/>
+    <script src="__JS__/jquery-3.1.0.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://nt1.268xue.com/static/common/html5.js?v=1486227637308"></script><![endif]-->
+</head>
+
+<body class="W-body U-body" style="background: none;">
+
+<include file="Index:header"/>
+<section class="c-main" style="margin-bottom: 45px">
+    <form method="post" action="/Home/Class/index" style="width:487px;height:34px;margin:40px auto 0 auto;">
+        <div id="searchTxt" class="searchTxt" onMouseOver="this.className='searchTxt searchTxtHover';"
+             onMouseOut="this.className='searchTxt';">
+            <input id="search" name="searchTx" type="text" placeholder="请输入班级名、课程名、课号或授课老师"/>
+        </div>
+        <div class="searchBtn">
+            <button id="searchBtn" type="submit">找班级</button>
+        </div>
+    </form>
+</section>
+<section class="c-main1">
+    <div>
+        <ul class="u-buying-list u-collect-list">
+            <volist name="classes" id="vo">
+                <li>
+                    <section class="fl u-c-img pr u-c-img-tc">
+                        <if condition="$vo.picpath neq null">
+                            <img src="{$vo.picpath}" class="dis">
+                            <else /><img src="__IMG__/class_default.png" class="dis">
+                        </if>
+                    </section>
+                    <h6 class="hLh20 of unFw mt10">
+                        <a class="c-4e fsize18 f-fM" title="{$vo.classname}" href="">{$vo.classname|delBrackets}</a>
+                    </h6>
+                    <div class="hLh20 of mt10">
+                        <span class="vam c-999 fsize14">教师：</span>
+                        <span class="vam u-m-c-teacher fsize14">{$vo.realname}</span>
+                    </div>
+                    <div class="hLh20 of mt10">
+                        <span class="vam c-999 fsize16">学院：</span>
+                        <span class="vam u-m-c-teacher fsize16">{$vo.college}</span>
+                    </div>
+                    <div>
+                        <input type="text" hidden value="{$vo.class_id}">
+                        <button class="btn btn-primary join" style="float:right">加入班级</button>
+                    </div>
+
+                </li>
+            </volist>
+        </ul>
+    </div>
+    <ul class="pagination">
+        {$pageRes}
+    </ul>
+</section>
+</body>
+<script src="__JS__/layer.js"></script>
+<script src="__JS__/dialog.js"></script>
+<script>
+    var url = '/Home/Sc/join';
+    $('.join').click(function () {
+        var class_id = $(this).prev().val();
+        var _this = this;
+        $.post(url,{'class_id':class_id},function(result){
+            if(result.status == 1) {
+                //成功
+                dialog.success_f(result.message,function () {
+                    $(_this).text('已加入');
+                    $(_this).removeClass("btn-primary");
+                    $(_this).addClass("btn-success");
+                    layer.close(layer.index);
+                });
+            }else if(result.status == 0) {
+                // 失败
+                dialog.error_f(result.message,function () {
+                    $(_this).text('已加入');
+                    $(_this).removeClass("btn-primary");
+                    $(_this).addClass("btn-success");
+                    layer.close(layer.index);
+                });
+            }
+        },"JSON");
+    })
+</script>
+</html>

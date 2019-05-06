@@ -1,0 +1,36 @@
+<?php
+    $username = getLoginUsername();
+?>
+
+<nav class="navbar navbar-default top-navbar" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle waves-effect waves-dark" data-toggle="collapse" data-target=".sidebar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand waves-effect waves-dark" href="{:U('Index/index')}"><i class="large material-icons">insert_chart</i> <strong>作业管理系统</strong></a>
+
+        <div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
+    </div>
+
+    <ul class="nav navbar-top-links navbar-right">
+        <li>
+            <a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i class="fa fa-user fa-fw"></i> <b>{$username}</b> <i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+    </ul>
+</nav>
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+    <li>
+        <if condition="$usertype eq 1">
+            <a href="{:U('Manager/personal')}"><i class="fa fa-gear fa-fw"></i>个人中心</a>
+            <else />
+            <a href="{:U('Teacher/personal')}"><i class="fa fa-gear fa-fw"></i>个人中心</a>
+        </if>
+    </li>
+    <li>
+        <a href="{:U('Login/logout')}"><i class="fa fa-sign-out fa-fw"></i>退出</a>
+    </li>
+</ul>

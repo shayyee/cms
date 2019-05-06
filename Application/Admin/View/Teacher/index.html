@@ -1,0 +1,134 @@
+<include file="Index:header" />
+<body>
+<div id="wrapper">
+    <include file="Index:nav"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="{:U('Config/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>系统设置</a>
+                </li>
+                <li>
+                    <a href="{:U('Manager/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>管理员管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Teacher/index')}" class="active-menu waves-effect waves-dark"><i class="fa fa-sitemap"></i>教师管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Student/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>学生管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Class/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>班级管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Course/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>课程管理</a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="{:U('Share/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>共享资料管理</a>-->
+                <!--</li>-->
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i> <a href="{:U('Teacher/index')}">教师管理</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-table"></i>{$nav}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="h_a">搜索</div>
+            <div class="search_type cc mb10">
+                <form action="{:U('Admin/Teacher/index')}" method="POST">
+                    <ul>
+                        <li><label>用户名</label><input name="username" type="text" class="input length_2 mr10"></li>
+                        <li><label>真实姓名</label><input name="realname" type="text" class="input length_2 mr10"></li>
+                        <li><button type="submit" class="btn btn_submit">搜索</button>
+                    </ul>
+                </form>
+            </div>
+            <div>
+                <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加
+                </button>
+                <button  id="button-import" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>批量导入
+                </button>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3></h3>
+                    <div class="table-responsive">
+                        <form id="singcms-listorder">
+                            <table class="table table-bordered table-hover singcms-table">
+                                <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>用户名（工号）</th>
+                                    <th>真实姓名</th>
+                                    <th>QQ号</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <volist name="teachers" id="vo">
+                                    <tr>
+                                        <td>{$vo.t_id}</td>
+                                        <td>{$vo.username}</td>
+                                        <td>{$vo.realname}</td>
+                                        <td>{$vo.qq}</td>
+                                        <td>
+                                            <a href="javascript:void(0)" attr-id="{$vo.t_id}" id="singcms-edit" attr-a="teacher" attr-message="编辑">
+                                                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                            </a>
+                                            <a href="javascript:void(0)" attr-id="{$vo.t_id}" id="singcms-delete"  attr-a="teacher" attr-message="删除">
+                                                <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </volist>
+                                </tbody>
+                            </table>
+                            <ul class="pagination">
+                                {$pageRes}
+                            </ul>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+    <!-- Morris Charts JavaScript -->
+</div><!-- /. WRAPPER  -->
+<script>
+    var SCOPE = {
+        'add_url':'/Admin/Teacher/add',
+        'edit_url' : '/Admin/Teacher/edit',
+        'delete_url' : '/Admin/Teacher/delete',
+        'import_url' : '/Admin/Teacher/import',
+        'index_url' : '/Admin/Teacher',
+    };
+</script>
+<include file="Index:footer" />
+

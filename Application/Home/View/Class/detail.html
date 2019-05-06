@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>个人中心</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet"/>
+    <link href="__CSS__/custom-styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="__CSS__/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__CSS__/ucenter.css"/>
+    <link rel="stylesheet" type="text/css" href="__CSS__/search.css"/>
+    <link rel="stylesheet" type="text/css" href="__CSS__/uploadify.css">
+    <script src="__JS__/jquery-3.1.0.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://nt1.268xue.com/static/common/html5.js?v=1486227637308"></script><![endif]-->
+</head>
+
+<body class="W-body U-body" style="background: none;">
+<include file="Index:header"/>
+<section class="c-main1" style="margin-bottom: 45px">
+    <div style="margin-top:10px;border:1px solid #ccc;padding:30px;">
+        <h3 style="margin-bottom: 10px;">共享资料
+            <span style="float: right">
+                <b>有问题就请教老师吧</b>
+                <a target=blank href="tencent://message/?uin={$teacher.qq}&Site={$teacher.realname}&Menu=yes">
+                    <img border="0" src="http://wpa.qq.com/pa?p=1:958662806:6">
+                </a>
+            </span>
+        </h3>
+        <if condition="$shares neq null">
+            <table class="table table-bordered table-hover singcms-table">
+                <thead>
+                <tr>
+                    <th>id</th>
+                    <th>名称</th>
+                    <th>上传时间</th>
+                    <th>文件大小</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="shares" id="vo">
+                    <tr>
+
+                        <td>{$vo.share_id}</td>
+                        <td id="filename">{$vo.filename}</td>
+                        <td>{$vo.create_time}</td>
+                        <td>{$vo.size|formatBytes}</td>
+                        <td>
+                            <input type="text" value="{$vo.path}" hidden>
+                            <button id="download" class="btn btn-primary">下载</button>
+                        </td>
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+            <ul class="pagination">
+                {$pageRes}
+            </ul>
+            <else/>
+            <div style="margin-top:80px">
+                <div style="background: url('__IMG__/nothing.png') center no-repeat;height:260px;"></div>
+                <h2 style="text-align:center;padding-left:40px;font-size:16px;">暂无共享资料</h2>
+            </div>
+        </if>
+        <h3 style="margin-bottom: 10px;">优秀学生作业
+        </h3>
+        <volist name="goodhws" id="vo">
+            <h4>{$vo.title}</h4>
+            <table class="table table-bordered table-hover singcms-table">
+                <thead>
+                <tr>
+                    <th>作者</th>
+                    <th>得分</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="vo['goods']" id="item">
+                    <if condition="count(vo.goods) neq 0">
+                        <tr>
+
+                            <td>{$item.realname}</td>
+                            <td>{$item.score}</td>
+                            <td>
+                                <!--<input value="{$item.dhw_id}" hidden/>-->
+                                <a href="/Home/Donehw/detail.html?id={$item.dhw_id}" class="btn btn-primary">详情</a>
+                            </td>
+                        </tr>
+                        <else/>
+                        <tr>
+                            <td>暂无</td>
+                        </tr>
+                    </if>
+                </volist>
+                </tbody>
+            </table>
+        </volist>
+    </div>
+</section>
+</body>
+<script src="__JS__/layer.js"></script>
+<script src="__JS__/dialog.js"></script>
+<script>
+    $('#download').click(function () {
+        var url = '/Home/Upload/downloadshare';
+        var filename = $('#filename').text();
+        var _this = this;
+        $.post(url,{
+            info:$(this).prev().val()
+        },function(result){
+            if(result.status == 1) {
+                //成功
+                $(_this).after("<a id='url' download style='display:none;' href='"+result.data+"'><p id='down'>url</p></a>");
+                $('#down').trigger('click');
+                $('#url').remove();
+            }else if(result.status == 0) {
+                // 失败
+                return dialog.error(result.message);
+            }
+        },"JSON");
+    });
+</script>
+</html>

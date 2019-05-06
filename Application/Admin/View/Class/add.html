@@ -1,0 +1,144 @@
+
+<include file="Index/header" />
+<body>
+
+<div id="wrapper">
+
+    <include file="Index/nav"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="{:U('Config/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>系统设置</a>
+                </li>
+                <li>
+                    <a href="{:U('Manager/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>管理员管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Teacher/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>教师管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Student/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>学生管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Class/index')}" class="active-menu waves-effect waves-dark"><i class="fa fa-sitemap"></i>班级管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Course/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>课程管理</a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="{:U('Share/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>共享资料管理</a>-->
+                <!--</li>-->
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>
+                            <a href="{:U('Class/index')}">课程管理</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-edit"></i> 添加
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <form class="form-horizontal" id="singcms-form">
+                        <div class="form-group">
+                            <label for="selectcname" class="col-sm-2 control-label">所属课程:</label>
+                            <div class="col-sm-5">
+                                <select class="form-control" name="courseid" id="selectcname" style="height:44px;">
+                                    <foreach name="courses" item="c">
+                                        <option value="{$c.course_id}">{$c.name}({$c.cno})</option>
+                                    </foreach>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="selectissue" class="col-sm-2 control-label">开课班次:</label>
+                            <div class="col-sm-5">
+                                <select class="form-control" name="issue" id="selectissue" style="height:44px;">
+                                    <foreach name="issues" item="i">
+                                        <option value="{$key}">{$i}</option>
+                                    </foreach>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputclassname" class="col-sm-2 control-label">班级名称:</label>
+                            <div class="col-sm-5">
+                                <input type="text" readonly name="classname" class="form-control" id="inputclassname" placeholder="无需填写自动生成"/>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" class="btn btn-primary" id="singcms-button-submit">提交</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<!-- Morris Charts JavaScript -->
+
+<script>
+    var SCOPE = {
+        'save_url' : '/Admin/Class/add',
+        'jump_url' : '/Admin/Class',
+    }
+</script>
+<script>
+    $(function () {
+        classname();
+    });
+    $('#selectcname').change(function () {
+        classname();
+    });
+    $('#selectissue').change(function () {
+        classname();
+    });
+    function classname() {
+        var cname = $('#selectcname').find("option:selected").text();
+        var issue = $('#selectissue').find("option:selected").text();
+        $('#inputclassname').val(cname+'-'+issue);
+    }
+</script>
+<include file="Index/footer" />
+
+
+
+
+

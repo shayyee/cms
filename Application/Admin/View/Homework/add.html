@@ -1,0 +1,134 @@
+
+<include file="Index/header" />
+<body>
+
+<div id="wrapper">
+
+    <include file="Index/nav"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="{:U('Donehw/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>已交作业</a>
+                <li>
+                <li>
+                    <a href="{:U('Homework/add')}" class="active-menu waves-effect waves-dark"><i class="fa fa-sitemap"></i>发布作业</a>
+                <li>
+                <li>
+                    <a href="{:U('Homework/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>作业列表</a>
+                <li>
+                <li>
+                    <a href="{:U('Share/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>共享资料</a>
+                <li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li class="active">
+                            <i class="fa fa-edit"></i> 发布作业
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <form class="form-horizontal" id="singcms-form" style="margin-top: 0">
+                        <div class="form-group">
+                            <label for="inputtitle" class="col-sm-2 control-label">作业标题:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="title" class="form-control" id="inputtitle" placeholder="请填写标题">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="classname" class="col-sm-2 control-label">所属班级:</label>
+                            <div class="col-sm-5">
+                                <select class="form-control" name="classid" id="classname" style="height:40px;">
+                                    <foreach name="classes" item="c">
+                                        <option value="{$c.class_id}">{$c.classname}</option>
+                                    </foreach>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="editor_singcms" class="col-sm-2 control-label">内容:</label>
+                            <div class="col-sm-5">
+                                <textarea class="input js-editor" id="editor_singcms" name="content" style="width:700px;height:300px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="endtime" class="col-sm-2 control-label">截止时间:</label>
+                            <div class="col-sm-5">
+                                <input id="endtime" name="endtime" readonly class="laydate-icon" style="width:230px;">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" class="btn btn-primary" id="singcms-button-submit">提交</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<!-- Morris Charts JavaScript -->
+
+<script>
+    var SCOPE = {
+        'save_url' : '/Admin/Homework/add',
+        'jump_url' : '/Admin/Homework/index.html',
+    }
+</script>
+<script src="__JS__/kindeditor/kindeditor-all.js"></script>
+<script src="__JS__/laydate/laydate.js"></script>
+<script>
+    // 6.2
+    KindEditor.ready(function(K) {
+        window.editor = K.create('#editor_singcms',{
+            uploadJson : '/Admin/Upload/uploadkindeditor',
+            afterBlur : function(){this.sync();}, //
+        });
+    });
+</script>
+<script>
+    laydate({
+        elem: '#endtime', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+        event: 'focus', //响应事件。如果没有传入event，则按照默认的click
+        format: 'YYYY-MM-DD hh:mm:ss', //日期格式
+        istime: true, //是否开启时间选择
+    });
+    laydate.skin('molv');
+</script>
+<include file="Index/footer" />
+
+
+
+
+

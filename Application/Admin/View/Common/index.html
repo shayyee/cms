@@ -1,0 +1,172 @@
+<include file="Index:header" />
+<body>
+<div id="wrapper">
+    <include file="Index:nav"/>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="{:U('Common/index')}" class="active-menu waves-effect waves-dark"><i class="fa fa-sitemap"></i>系统设置</a>
+                </li>
+                <li>
+                    <a href="{:U('Manager/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>管理员管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Teacher/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>教师管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Student/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>学生管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Class/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>班级管理</a>
+                </li>
+                <li>
+                    <a href="{:U('Course/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>课程管理</a>
+                </li>
+                <!--<li>-->
+                    <!--<a href="{:U('Share/index')}" class="waves-effect waves-dark"><i class="fa fa-sitemap"></i>共享资料管理</a>-->
+                <!--</li>-->
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i> <a href="{:U('Common/index')}">系统管理</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-table"></i>{$nav}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active">
+                    <a href="#oss" data-toggle="tab">
+                        OSS存储配置
+                    </a>
+                </li>
+                <li>
+                    <a href="#basic" data-toggle="tab">
+                        基本配置
+                    </a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="oss">
+                    <form class="form-horizontal" id="singcms-form">
+                        <if condition="$user eq 'admin'">
+                            <div class="form-group">
+                                <label for="inputid" class="col-sm-2 control-label">Access Key ID:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" name="id" class="form-control" id="inputid" value="{$config['KEY_ID']}">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputsecret" class="col-sm-2 control-label">Access Key Secret:</label>
+                                <div class="col-sm-5">
+                                    <input type="password" name="secret" class="form-control" id="inputsecret" value="{$config['KEY_SECRET']}"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputendpoint" class="col-sm-2 control-label">End Point:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" name="endpoint" class="form-control" id="inputendpoint" value="{$config['END_POINT']}"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputbucket" class="col-sm-2 control-label">BucketName:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" name="bucket" class="form-control" id="inputbucket" value="{$config['BUCKET']}"/>
+                                </div>
+                            </div>
+                        </if>
+                        <div class="form-group">
+                            <label for="inputboot" class="col-sm-2 control-label">文件上传根目录:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="boot" class="form-control" id="inputboot" value="{$boot}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputavatar" class="col-sm-2 control-label">头像上传目录:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="avatar" class="form-control" id="inputavatar" value="{$paths['AVATAR']}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputhomework" class="col-sm-2 control-label">作业上传目录:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="homework" class="form-control" id="inputhomework" value="{$paths['HOMEWORK']}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputshare" class="col-sm-2 control-label">共享资料上传目录:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="share" class="form-control" id="inputshare" value="{$paths['SHARE']}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" class="btn btn-primary" id="singcms-button-submit">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="basic">
+                    <form class="form-horizontal" id="singcms-form1">
+                        <div class="form-group">
+                            <label for="inputissue" class="col-sm-2 control-label">增加开课班次:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="issue" class="form-control" id="inputissue" placeholder="请填写班次（例：2017年春）">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputps" class="col-sm-2 control-label">页面显示条数:</label>
+                            <div class="col-sm-5">
+                                <input type="text" name="pagesize" class="form-control" id="inputps" placeholder="PageSize" value="{$pagesize}"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" class="btn btn-primary" id="singcms-button-submit1">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+    <!-- Morris Charts JavaScript -->
+</div><!-- /. WRAPPER  -->
+<script>
+    var SCOPE = {
+        'save_url' : '/Admin/Common/save',
+        'jump_url' : '/Admin/Common',
+    };
+</script>
+
+<include file="Index:footer" />
+
